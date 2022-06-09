@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+      <style>
+         div{
+            text-align: center;
+         }
+         .bg-image{
+            background: url(/static/images/ml_image.jpg);
+            /* filter: blur(5px); */
+            height: 100%; 
+            background-position: center;
+            background-size: cover;
+         }
+      </style>
+   </head>
+   <body style="background-color: grey; color:white; margin:auto; width:80%">
+      <!-- <div class="bg-image"></div> -->
+      <div >
+         <h1>
+            <div><font colour="white">
+               Prediction of EV Charging Behavior Outcome of Analysis</font>
+            </div>
+         </h1>
+         <hr>
+         <div >
+            <p><h2>Accuracy of various algorithms used is plotted in the form of a graph shown below:</h2></p>
+            <p><img src={{file_location}} alt="Graph plotted by the linear regression" style="text-align:center"></p>
+            <p ><h1>Accuracy of the best algorithm is : {{prediction}}</h1></p>
+         </div>
+      </div>
+   </body>
+</html>

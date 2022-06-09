@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <style>
+            body,html {
+                height: 100%;
+                }
+            .bg-image{
+                background: url(/static/images/background-image.jpg);
+                /* filter: blur(5px); */
+                height: 165%; 
+                background-position: center;
+                background-size: cover;
+            }
+        </style>
+    </head>
+<body><div class="bg-image"></div>
+    <!-- <div style="background-image: url(/static/images/background-image.jpg); background-size: cover; background-repeat: no-repeat;filter: blur(8px);height:100%"> -->
+    <div class="container;" style="  background-color: rgb(0,0,0); 
+                background-color: rgba(0,0,0, 0.4);
+                color: white;
+                font-weight: bold;
+                border: 3px solid #f1f1f1;
+                position: absolute;
+                top: 99%;
+                left: 59.90%;
+                transform: translate(-60%, -60%);
+                z-index: 2;
+                width: 100%;
+                /* padding: 20px; */
+                text-align: center;" >
+        <!-- <img src="{{url_for('static',filename = '/images/background-image.jpg')}}" > -->
+        <h2 style="font-size: large;text-align: center;"><strong>Prediction of EV Charging Behavior</strong> Using ML!</h2>
+        <br>
+        <form style="text-align: center;" method="POST" action="/predict">
+               
+                    <div class="form-group" >  
+                        <label for="Time"><p >Brand</p></label> <br>
+                        <input type="text" name="Time"  required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="V1"><p >Model</p></label><br>
+                        <input type="text" name="V1"  required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="V2"><p >AccelSec </p></label>
+                        <br>
+                        <input type="text" name="V2"  required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="V3"><p>TopSpeed_KmH </p></label>
+                        <br>
+                        <input type="text" name="V3"  required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="V4"><p >Range_Km</p></label>
+                        <br>
+                        <input type="text" name="V4"  required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="V5"><p >Efficiency_WhKm </p></label>
+                        <br>
+                        <input type="text" name="V5"  required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="V6"><p >FastCharge_KmH</p></label>
+                        <br>
+                        <input type="text" name="V6"  required>
+                    </div>
+                
+                <div class="form-group">
+                    <label for="V7"><p >RapidCharge</p></label>
+                    <br>
+                    <input type="text" name="V7"  required>
+                </div>
+
+                <div class="form-group">
+                    <label for="V8"><p >PowerTrain </p></label>
+                    <br>
+                    <input type="text" name="V8"  required>
+                </div>
+
+                <div class="form-group">
+                    <label for="V9"><p >PlugType</p></label>
+                    <br>
+                    <input type="text" name="V9"  required>
+                </div>
+
+                <div class="form-group">
+                    <label for="V10"><p >BodyStyle</p></label>
+                    <br>
+                    <input type="text" name="V10"  required>
+                </div>
+
+                <div class="form-group">
+                    <label for="V11"><p >Segment</p></label>
+                    <br>
+                    <input type="text" name="V11"  required>
+                </div>
+
+                <div class="form-group">
+                    <label for="V12"><p >Seats</p></label>
+                    <br>
+                    <input type="text" name="V12"  required>
+                </div>
+
+                <div class="form-group">
+                    <label for="V12"><p >PriceEuro </p></label>
+                    <br>
+                    <input type="text" name="V13"  required>
+                </div>
+               </div>
+                
+                <div class="form-group">
+                    <button  class="btn btn-primary" type="Submit" value="Submit">Submit</button>
+                </div>
+        </form>
+    </div>
+</body>
+</html>
